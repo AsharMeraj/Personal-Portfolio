@@ -1,10 +1,15 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import VideoBg from './VideoComponent/VideoBg'
 import Navbar from './Components/Navbar'
+import { Suspense, useState } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+
+
+
+
+const inter = Poppins({ subsets: ['latin'], weight: ['500'] })
 
 export const metadata: Metadata = {
   title: 'Ashar Dev',
@@ -19,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        <VideoBg />
         <div className='overflow-y-hidden'>
+          <div className='z-20'>
+            <VideoBg />
+          </div>
+          <Navbar />
           {children}
         </div>
       </body>

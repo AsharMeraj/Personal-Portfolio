@@ -1,14 +1,40 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react';
+import Video from 'next-video';
+import { ClipLoader } from 'react-spinners';
+import { useRouter } from 'next/router';
 
-function VideoBg() {
-    return (
-        <div className='w-full h-full'>
-            <div className='absolute w-full h-full top-0 left-0 right-0 bg-gradient-to-b object from-transparent to-black/5 z-0'></div>
-            <video className='absolute -z-10 top-0 left-0 right-0 w-full h-full object-cover object' autoPlay muted loop >
-                <source src="/Videos/video4.mp4"  type="video/mp4" />
-            </video>
+const VideoBg = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleCanPlay = () => {
+    setIsLoading(false); // Video is ready to play, hide loading UI
+  };
+
+  return (
+    <div>
+      {isLoading &&
+        <div className='w-full h-screen fixed  z-50 flex items-center justify-center bg-black '>
+          <ClipLoader size={100} color="#ff3e3e" />
         </div>
-    )
-}
+      }
 
-export default VideoBg
+      <div className='w-full h-full overflow-hidden fixed -z-20 top-0'>
+        <div className='absolute w-full h-full top-0 left-0 right-0 object z-0 bg-black/30'></div>
+        <Video
+          autoPlay
+          muted
+          loop
+          playsInline  // Ensures inline playback without fullscreen or controls
+          paused={false}
+          controls={false}
+          className='fixed scale-x-[-1] -z-10 top-0 left-0 right-0 w-full h-full  object-cover object'
+          src="/Videos/Video.mp4"
+          onCanPlay={handleCanPlay} // Trigger when video can play
+        />
+      </div>
+    </div>
+  );
+};
+
+export default VideoBg;

@@ -3,14 +3,14 @@ import React from "react"
 import Image from "next/image";
 import AboutImage from "@/app/Images/AboutImage.png"
 import { motion } from "framer-motion";
-import Button from "./Button";
 import { BoldFont } from "./Font";
+import { Button } from "@/components/ui/button";
 
 
 
 export default function About() {
   return (
-    <main id="about" className="bg-gradient-to-b relative top-0 from-black to-[rgb(30,0,0)] w-full py-[8rem] flex items-center flex-col">
+    <main id="about" className="bg-gradient relative top-0 w-full py-[8rem] flex items-center flex-col">
       <motion.h1
         className="text-[1.8rem] text-[--Secondary-Color] max-[1200px]:mb-[3rem] "
         key="heading2"
@@ -41,10 +41,10 @@ export default function About() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}>
-          <Image className="relative max-[934px]:mt-[1rem] max-[400px]:mt-0" alt="/" src={AboutImage} />
+          <Image className="relative max-[934px]:mt-[2rem] max-[400px]:" alt="/" src={AboutImage} />
           <div className="mt-2">
             <a href='Resume.pdf' download='Resume.pdf'>
-              <Button name='Download Resume' />
+              <Button variant={'outline'}>Download Resume</Button>
             </a>
           </div>
         </motion.div>

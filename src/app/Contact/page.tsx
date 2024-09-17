@@ -1,13 +1,13 @@
 import React from 'react'
 import Button from '@/app/Components/Button'
-import AnimateWrap from './AnimateWrap'
+import { ContactAnimateWrap } from '../Components/AnimateWrap'
 
 function Contact() {
     return (
-        <AnimateWrap>
-            <section className='w-full h-screen overflow-y-hidden z-30'>
-                <section className="h-full flex items-center justify-center z-10 relative">
-                    <div className="mx-auto max-w-screen-md w-[40rem]  mt-[6rem] max-[840px]:mt-[2.5rem]">
+        <section className='w-full h-full bg-black/70 relative overflow-y-hidden z-20'>
+            <ContactAnimateWrap>
+                <section className="h-full  flex items-center justify-center z-10 relative">
+                    <div className="mx-auto  max-w-screen-md w-[40rem]  mt-[6rem] max-[840px]:mt-[2.5rem]">
                         <h2 className="text-[1.6rem] font-bold text-[--Secondary-Color] w-fit m-auto max-[840px]:text-[1.3rem]">CONTACT</h2>
                         <p className="mb-4 max-[840px]:mb-2 mx-[1.5rem] lg:mb-8 mt-4 max-[840px]:mt-2 font-light text-center text-white sm:text-[1.1rem] max-[840px]:text-[0.9rem]">Need details about our Business plan? Let us know.</p>
                         <form action="https://formspree.io/f/mpzvpeod"
@@ -30,8 +30,8 @@ function Contact() {
                         </form>
                     </div>
                 </section>
-            </section>
-        </AnimateWrap>
+            </ContactAnimateWrap>
+        </section>
     )
 }
 
