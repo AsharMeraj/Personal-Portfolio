@@ -7,9 +7,9 @@ import { HomeAnimateWrap } from '../Components/AnimateWrap'
 
 const page = () => {
     return (
-        <main id="about" className="relative bg-black/70  w-full py-[5rem] md:py-[10rem] flex items-center flex-col">
-        <HomeAnimateWrap>
-                <h2 className='text-xl text-[--Secondary-Color] w-fit m-auto mb-4'>About Me</h2>
+        <main id="about" className="relative bg-black  w-full py-[2rem] md:py-[8rem] flex items-center flex-col">
+            <HomeAnimateWrap>
+                <h2 className='text-2xl text-[--Secondary-Color] w-fit m-auto mb-4'>About Me</h2>
 
                 <main className="flex justify-between items-center w-fit gap-[4rem]  mx-10 max-[840px]:mx-[1rem] max-[1079px]:gap-[2rem] max-[934px]:flex-col max-[934px]:gap-[4rem] max-[400px]:gap-[4rem]">
                     <div
@@ -32,8 +32,8 @@ const page = () => {
                         </div>
                     </div>
                 </main>
-        </HomeAnimateWrap>
-            </main>
+            </HomeAnimateWrap>
+        </main>
     )
 }
 

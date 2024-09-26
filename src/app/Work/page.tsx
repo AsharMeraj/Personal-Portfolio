@@ -10,10 +10,10 @@ import { HomeAnimateWrap } from '../Components/AnimateWrap'
 const page = () => {
   return (
 
-    <section className='relative w-full h-full bg-black/70 flex  flex-col items-center py-16 md:py-24 lg:pt-28 lg:pb-12'>
+    <section className='relative w-full h-full bg-black flex  flex-col items-center py-[2rem] md:py-[6rem]'>
       <HomeAnimateWrap>
-        <h2 className='text-xl z-30 text-[--Secondary-Color] w-fit m-auto mb-4'>My Work</h2>
-        <main className='grid sm:mx-10 mx-5 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[71rem] p-4 gap-12 md:gap-8'>
+        <h2 className='text-2xl z-30 text-[--Secondary-Color] w-fit m-auto mb-4'>My Work</h2>
+        <main className='grid sm:mx-10 mx-5 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[71rem] p-4 gap-10 md:gap-8'>
 
 
           <Link

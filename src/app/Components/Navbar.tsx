@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div id='navbar'>
-      <nav className='z-10 bg-gradient-to-b from-black to-transparent w-full flex justify-center items-center py-[1.5rem]'>
+      <nav className='z-10  w-full flex justify-center items-center py-[1.5rem]'>
         <div className='w-[70rem] flex items-center justify-between mx-10 max-sm:mx-[1rem]'>
           <div className='flex items-center'>
             <div className='flex w-fit'>
@@ -43,7 +43,7 @@ function Navbar() {
 
         </div>
       </nav>
-      <main className={`bg-black/80 flex items-center justify-center h-screen ml-2 navwidth fixed top-0 duration-700 z-30  ${showMobileNav ? 'translate-y-[0]' : 'translate-y-[-100%]'}`}>
+      <main className={`bg-black/80  flex items-center justify-center h-screen ml-2 navwidth fixed top-0 duration-700 z-30  ${showMobileNav ? 'translate-y-[0]' : 'translate-y-[-100%]'}`}>
         <MobileNavbar showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} />
       </main>
     </div>

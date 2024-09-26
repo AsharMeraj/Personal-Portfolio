@@ -25,9 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className='overflow-y-hidden'>
-          <div className='z-20'>
-            <VideoBg />
-          </div>
+          <div className='w-full h-screen bg-black fixed  -z-50'></div>
           <Navbar />
           {children}
         </div>

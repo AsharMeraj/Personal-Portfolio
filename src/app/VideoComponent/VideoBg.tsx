@@ -14,12 +14,12 @@ const VideoBg = () => {
   return (
     <div>
       {isLoading &&
-        <div className='w-full h-screen fixed  z-50 flex items-center justify-center bg-black '>
+        <div className='w-full h-screen top-0 overflow-y-hidden fixed z-50 flex items-center justify-center bg-black '>
           <ClipLoader size={100} color="#ff3e3e" />
         </div>
       }
 
-      <div className='w-full h-full overflow-hidden fixed -z-20 top-0'>
+      <div className='w-full h-full absolute -z-20 top-0'>
         <div className='absolute w-full h-full top-0 left-0 right-0 object z-0 bg-black/30'></div>
         <Video
           autoPlay
