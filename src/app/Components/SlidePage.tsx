@@ -6,6 +6,7 @@ import TimeStore from '@/app/Images/TimeStore.png'
 import DineMarket from '@/app/Images/Dinemarket.png'
 import BusinessGrowth from '@/app/Images/BusinessGrowth.png'
 import AiInterviewMocker from '@/app/Images/AiInterviewMocker.png'
+import AmericanHitecPestControl from '@/app/Images/AmericanHitecPestControl.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -25,7 +26,7 @@ const Responsive = {
 }
 
 
-const  SlidePage = () => {
+const SlidePage = () => {
     return (
         <section className='w-full grid place-items-center py-8 relative z-0'>
             <main className='flex flex-col gap-12'>
@@ -33,10 +34,21 @@ const  SlidePage = () => {
                     responsive={Responsive}
                     containerClass='w-[80rem] max-[1293px]:w-[60rem] max-[975px]:w-[50rem] max-[820px]:w-[30rem] max-[525px]:w-[20rem] max-[333px]:w-[15rem] m-auto'
                     infinite={true}>
-                        <Link target='_blank' href={"https://time-store.vercel.app/"}><Image alt='/' width={600} height={600} src={TimeStore} /></Link>
-                        <Link target='_blank' href={"https://dinemarket-blue.vercel.app/"}><Image alt='/' width={600} height={600} src={DineMarket} /></Link>
-                        <Link target='_blank' href={"https://asharmeraj.github.io/React-Typescript-App/"}><Image alt='/' width={600} height={600} src={BusinessGrowth} /></Link>
-                        <Link target='_blank' href={"https://ai-interview-mocker-aim.vercel.app/"}><Image alt='/' width={600} height={600} src={AiInterviewMocker} /></Link>
+                    <Link target='_blank' href={"https://time-store.vercel.app/"}>
+                        <Image alt='/' width={600} height={600} src={TimeStore} />
+                    </Link>
+                    <Link target='_blank' href={"https://dinemarket-blue.vercel.app/"}>
+                        <Image alt='/' width={600} height={600} src={DineMarket} />
+                    </Link>
+                    <Link target='_blank' href={"https://asharmeraj.github.io/React-Typescript-App/"}>
+                        <Image alt='/' width={600} height={600} src={BusinessGrowth} />
+                    </Link>
+                    <Link target='_blank' href={"https://ai-interview-mocker-aim.vercel.app/"}>
+                        <Image alt='/' width={600} height={600} src={AiInterviewMocker} />
+                    </Link>
+                    <Link target='_blank' href={"https://americanhitecpestcontrol-asharmeraj.vercel.app/"}>
+                        <Image alt='/' width={600} height={600} src={AmericanHitecPestControl} />
+                    </Link>
                 </Carousel>
             </main>
         </section>

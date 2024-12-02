@@ -4,8 +4,10 @@ import TimeStore from '@/app/Images/TimeStore.png'
 import DineMarket from '@/app/Images/Dinemarket.png'
 import BusinessGrowth from '@/app/Images/BusinessGrowth.png'
 import AiInterviewMocker from '@/app/Images/AiInterviewMocker.png'
+import AmericanHitecPestControl from '@/app/Images/AmericanHitecPestControl.png'
 import Link from 'next/link';
 import { HomeAnimateWrap } from '../Components/AnimateWrap'
+import { amazonS3 } from 'next-video/dist/providers/providers.js'
 
 const page = () => {
   return (
@@ -42,6 +44,13 @@ const page = () => {
             href={'https://dinemarket-blue.vercel.app/'}
             className=''>
             <WorkCard name={'DineMarket'} src={DineMarket} para={'This is a ecommerce application of a clothing brand called dinemarket where you can find varieties of dresses'} />
+          </Link>
+
+          <Link
+            target='_blank'
+            href={'https://americanhitecpestcontrol-asharmeraj.vercel.app/'}
+            className=''>
+            <WorkCard name={'American Hitec Pest Control (Client)'} src={AmericanHitecPestControl} para={'A client project for American Hitec Pest Control, showcasing their reliable pest solutions.'} />
           </Link>
 
         </main>

@@ -31,9 +31,29 @@
     filter: drop-shadow(20px 5px 10px black);
 }
 
+
 .light {
-    box-shadow: 0px 0px 2rem rgb(255, 62, 62);
+    border-top: 2px solid rgb(255, 62, 62);
+    border-radius: 100%;
 }
+.animate {
+    animation: animate 05s infinite linear ;
+}
+
+@keyframes animate {
+    0% {
+       
+        transform: rotate(0);
+    }
+
+    100% {
+       
+        transform: rotate(360deg);
+    }
+
+
+}
+
 
 .dim-light {
     box-shadow: 0px 0px 0.5rem rgb(255, 62, 62);
@@ -100,22 +120,7 @@
     }
 }
 
-.animate {
-    animation: animate 01s infinite linear ease-out;
-    /* transform: translateX(150%);
-    transform: translateY(6%) */
-}
 
-@keyframes animate {
-    0% {
-        box-shadow: 0px 0px 2rem rgb(255, 62, 62);
-    }
-
-    100% {
-        box-shadow: 0px 0px 2rem rgb(255, 200, 0)
-    }
-
-}
 
 @layer base {
     :root {
