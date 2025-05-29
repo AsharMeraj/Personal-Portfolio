@@ -5,6 +5,7 @@ import { MdAnimation } from "react-icons/md";
 import { IconType } from 'react-icons/lib';
 import { SiHostinger } from "react-icons/si";
 import { HiMiniSquare3Stack3D } from "react-icons/hi2";
+import Link from 'next/link';
 
 interface PropType {
     logo: IconType
@@ -43,15 +44,17 @@ const Services = () => {
 
                 {/* Right Section */}
                 <div className='grid lg:grid-cols-2 gap-16 md:gap-10'>
-                    <ServicesCard logo={MdOutlineLaptopWindows} head='Website Development' para='Whether you&apos;re midway or just starting, our web development services add the perfect finishing touch.'/>
+                    <ServicesCard logo={MdOutlineLaptopWindows} head='Website Development' para='Whether you&apos;re midway or just starting, our web development services add the perfect finishing touch.' />
 
-                    <ServicesCard logo={MdAnimation} head='Web Animations' para='From concept to execution, our web animation adds seamless motion and interactivity to your site.'/>
+                    <ServicesCard logo={MdAnimation} head='Web Animations' para='From concept to execution, our web animation adds seamless motion and interactivity to your site.' />
 
-                    <ServicesCard logo={SiHostinger} head='Web Hosting' para='From code to launch, our web development and hosting ensure a seamless experience.'/>
+                    <ServicesCard logo={SiHostinger} head='Web Hosting' para='From code to launch, our web development and hosting ensure a seamless experience.' />
 
-                    <ServicesCard logo={HiMiniSquare3Stack3D} head='3D Model Implementation' para='Whether you&apos;re midway or just starting, our web development services add the perfect finishing touch.'/>
+                    <ServicesCard logo={HiMiniSquare3Stack3D} head='3D Model Implementation' para='Whether you&apos;re midway or just starting, our web development services add the perfect finishing touch.' />
                 </div>
-                <div className='block md:hidden'><Button>View All Services</Button></div>
+                <Link href={"/Services"} className='block md:hidden'>
+                    <Button>View All Services</Button>
+                </Link>
             </main>
         </section>
     )
