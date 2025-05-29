@@ -21,6 +21,9 @@ const MobileNavbar: React.FC<ChildType> = ({ setShowMobileNav }) => {
                         <Link className='names tracking-wider text-white cursor-pointer text-[15px] hover:text-[--Secondary-Color] duration-300' onClick={() => { setShowMobileNav(false) }} href='/About'>ABOUT</Link>
                     </li>
                     <li className='text-[15px] hover:opacity-80 cursor-pointer select-none'>
+                        <Link className='names tracking-wider text-white cursor-pointer text-[15px] hover:text-[--Secondary-Color] duration-300' onClick={() => { setShowMobileNav(false) }} href='/Services'>SERVICES</Link>
+                    </li>
+                    <li className='text-[15px] hover:opacity-80 cursor-pointer select-none'>
                         <Link className='names tracking-wider text-white cursor-pointer text-[15px] hover:text-[--Secondary-Color] duration-300' onClick={() => { setShowMobileNav(false) }} href='/Skills'>SKILLS</Link>
                     </li>
                     <li className='text-[15px] hover:opacity-80 cursor-pointer select-none'>

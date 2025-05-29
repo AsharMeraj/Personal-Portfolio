@@ -32,6 +32,10 @@ function Navbar() {
       path: '/About'
     },
     {
+      name: "Services",
+      path: '/Services'
+    },
+    {
       name: "Skills",
       path: '/Skills'
     },
