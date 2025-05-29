@@ -1,5 +1,4 @@
 import React from 'react'
-import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
@@ -8,7 +7,6 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from 'next/image'
-import Button from './button/Button'
 
 const Testimonials = () => {
     const ClientList = [

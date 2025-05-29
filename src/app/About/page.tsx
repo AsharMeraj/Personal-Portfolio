@@ -3,7 +3,7 @@ import { DiModernizr } from 'react-icons/di'
 import { MdAnimation } from 'react-icons/md'
 import { GrHostMaintenance } from 'react-icons/gr'
 import Link from 'next/link'
-import { AboutCard } from './_component/AboutCard'
+import { AboutCard } from './_components/AboutCard'
 
 const page = () => {
     return (

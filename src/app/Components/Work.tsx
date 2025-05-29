@@ -1,10 +1,6 @@
 'use client';
 import React from 'react'
-import { motion } from 'framer-motion'
-import { BoldFont } from './Font';
-import SlidePage from './SlidePage';
 import Image from 'next/image';
-import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselApi,

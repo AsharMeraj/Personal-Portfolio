@@ -1,8 +1,5 @@
 import { Quicksand } from "next/font/google";
 
-type PropType = {
-    size: number
-}
 const light = Quicksand({
     subsets: ["latin"],
     weight: ["600"]

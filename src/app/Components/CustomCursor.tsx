@@ -1,4 +1,4 @@
-"use client"; // Required for Next.js App Router (if using Pages Router, remove this)
+"use client";
 
 import { useEffect, useState } from "react";
 

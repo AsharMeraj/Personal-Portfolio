@@ -2,7 +2,6 @@
 import React from 'react'
 import TypeAnimate from './TypeAnimate'
 import { motion } from 'framer-motion'
-import { HomeAnimateWrap } from './AnimateWrap'
 import Button from './button/Button'
 import Link from 'next/link'
 
@@ -32,7 +31,7 @@ export default function HomePage() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className='text-white text-4xl mt-4 md:text-5xl xl:text-6xl max-[840px]:text-center font-semibold drop-shadow-2xl '>
-              I&apos;m Ashar Meraj
+              I&apos;m M.Ashar
 
             </motion.h1>
             {/* <motion.h1

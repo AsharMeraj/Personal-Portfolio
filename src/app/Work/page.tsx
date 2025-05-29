@@ -8,7 +8,6 @@ import TimeStore2 from '../../../public/Images/TimeStore2.png'
 import BusinessGrowth from '../../../public/Images/BusinessGrowth2.png'
 import AiAcademyStretch2 from '../../../public/Images/AiAcademyStretch3.png'
 import DineMarketUpdated from '../../../public/Images/DineMarketUpdated6.png'
-import Button from '../Components/button/Button'
 
 const page = () => {
   return (

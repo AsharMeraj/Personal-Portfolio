@@ -1,21 +1,6 @@
 import React from 'react'
-import { DiModernizr } from 'react-icons/di'
-import { MdAnimation } from 'react-icons/md'
-import { GrHostMaintenance } from 'react-icons/gr'
-import { IconType } from 'react-icons/lib'
 import Link from 'next/link'
-
-interface PropType {
-    logo: IconType
-    head: string
-    para: string
-}
-
-export const SkillsCard = ({ name }: { name: string }) => {
-    return (
-        <h2 className='px-5 py-2 h-fit text-white tracking-wider sm:tracking-normal sm:font-mono border border-primary w-fit sm:text-base text-sm text-center hover:bg-primary '>{name}</h2>
-    )
-}
+import { SkillsCard } from './_components/SkillsCard'
 
 const page = () => {
     return (

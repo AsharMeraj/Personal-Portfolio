@@ -1,5 +1,3 @@
-import { Link1Icon } from "@radix-ui/react-icons";
-import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -8,24 +6,6 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    // <footer className="w-full py-24 bg-backgroundColorDark">
-    //   <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-    //     {/* Grid */}
-    //     <div className="py-10 flex justify-between items-center flex-col gap-8 lg:flex-row">
-    //       <div className='flex w-fit'>
-    //         <h2 className='text-[1.5rem] text-primary font-extrabold flex items-center max-lg:text-[1.2rem] tracking-widest cursor-pointer'>Ashar</h2>
-    //         <h1 className='text-[1.5rem] text-[--Secondary-Color] font-extrabold flex items-center max-lg:text-[1.2rem] tracking-widest'>.</h1>
-    //       </div>
-    //       <ul className="text-sm text-center ">
-    //         <p className="text-gray-400 text-sm">
-    //           © {new Date().getFullYear()} Copyright Ashar Meraj. Powered by Next.js & Tailwind CSS.
-    //         </p>
-    //       </ul>
-    //     </div>
-    //     {/* Grid */}
-
-    //   </div>
-    // </footer>
     <footer className="bg-backgroundColorDark pt-20 pb-6 px-10 font-sans tracking-wide relative">
       <div className="max-w-5xl w-full mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 ">
@@ -111,7 +91,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <p className='text-gray-400 text-sm text-center'>© {new Date().getFullYear()} Copyright Ashar Meraj. All rights reserved.
+          <p className='text-gray-400 text-sm text-center'>© {new Date().getFullYear()} Copyright Muhammad Ashar. All rights reserved.
           </p>
         </div>
       </div>

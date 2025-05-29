@@ -1,10 +1,5 @@
 "use client";
 import React from "react"
-import Image from "next/image";
-import AboutImage from "@/app/Images/AboutImage.png"
-import { motion } from "framer-motion";
-import { BoldFont } from "./Font";
-import Button from "./button/Button";
 import { DiModernizr } from "react-icons/di";
 import { IconType } from "react-icons/lib";
 import { MdAnimation } from "react-icons/md";
