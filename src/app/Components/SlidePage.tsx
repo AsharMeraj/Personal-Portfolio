@@ -7,6 +7,7 @@ import DineMarket from '@/app/Images/Dinemarket.png'
 import BusinessGrowth from '@/app/Images/BusinessGrowth.png'
 import AiInterviewMocker from '@/app/Images/AiInterviewMocker.png'
 import AmericanHitecPestControl from '@/app/Images/AmericanHitecPestControl.png'
+import AiAcademy from '@/app/Images/AiAcademy.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -48,6 +49,9 @@ const SlidePage = () => {
                     </Link>
                     <Link target='_blank' href={"https://americanhitecpestcontrol-asharmeraj.vercel.app/"}>
                         <Image alt='/' width={600} height={600} src={AmericanHitecPestControl} />
+                    </Link>
+                    <Link target='_blank' href={"https://asharmeraj-ai-academy.vercel.app/"}>
+                        <Image alt='/' width={600} height={600} src={AiAcademy} />
                     </Link>
                 </Carousel>
             </main>

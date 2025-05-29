@@ -17,7 +17,7 @@ const SkillCard = (props: PropType) => {
             viewport={{ once: true }}>
             <span className='absolute inset-0 w-full h-full animate light'>
             </span>
-            <div className='bg-black flex flex-col items-center  justify-center   w-[6rem] h-[6rem] md:w-[8rem] md:h-[8rem] lg:w-[9rem] lg:h-[9rem] '>
+            <div className=' flex flex-col items-center  justify-center   w-[6rem] h-[6rem] md:w-[8rem] md:h-[8rem] lg:w-[9rem] lg:h-[9rem] '>
                 <Image className='w-[3rem] max-[575px]:w-[2.5rem] max-[446px]:w-[2rem]' alt='/' src={props.src} />
                 <h1 className='text-white text-[11px] sm:text-[13px] text-center px-2'>{props.name}</h1>
             </div>

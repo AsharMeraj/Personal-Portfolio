@@ -6,7 +6,7 @@ const TypeAnimate = () => {
     return (
         <>
             <ReactTyped
-                strings={['Next.js', 'React.js', 'Typescript']}
+                strings={['Next.js', 'Typescript', 'Gemini']}
                 typeSpeed={80}
                 backSpeed={50}
                 loop />

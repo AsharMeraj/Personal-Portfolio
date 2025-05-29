@@ -1,15 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
-import VideoBg from './VideoComponent/VideoBg'
+import { Outfit } from 'next/font/google'
 import Navbar from './Components/Navbar'
-import { Suspense, useState } from 'react'
+import Footer from './Components/Footer'
+import NextTopLoader from 'nextjs-toploader';
 
-
-
-
-
-const inter = Poppins({ subsets: ['latin'], weight: ['500'] })
+const inter = Outfit({ subsets: ['latin'], weight: ['600'] })
 
 export const metadata: Metadata = {
   title: 'Ashar Dev',
@@ -22,14 +18,23 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className='overflow-y-hidden'>
-          <div className='w-full h-screen bg-black fixed  -z-50'></div>
-          <Navbar />
-          {children}
-        </div>
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <body className={inter.className}>
+          <NextTopLoader
+            color='var(--primary)'
+            height={4}
+            initialPosition={0.10}
+            showSpinner={false}
+            crawlSpeed={50}
+          />
+          <div className="overflow-hidden relative">
+              <Navbar />
+              {children}
+              <Footer />
+          </div>
+        </body>
+      </html >
+    </>
   )
 }

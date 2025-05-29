@@ -1,73 +1,68 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
-import MyPic from '@/app/Images/MyPic3.png'
 import TypeAnimate from './TypeAnimate'
-import LightFont from './Font'
-import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 import { HomeAnimateWrap } from './AnimateWrap'
-import VideoBg from '../VideoComponent/VideoBg'
+import Button from './button/Button'
+import Link from 'next/link'
 
 
 
 export default function HomePage() {
   return (
     <section>
-      <VideoBg />
-      <HomeAnimateWrap>
-
-      
-      <main className='w-full height flex items-center justify-center z-10'>
-        <div className='w-[70rem] relative top-[2rem] max-[840px]:top-0 max-[840px]:flex-col flex justify-between items-center mx-10 max-[840px]:mx-[1rem]'>
+      {/* <VideoBg /> */}
+      <main className='w-full h-[40rem] md:h-[55rem] relative top-0  flex items-center justify-center z-0 '>
+        <span className='w-full h-[40rem] md:h-[55rem] bg-[url(/bg.jpg)] bg-center bg-cover -scale-x-100 absolute inset-0'></span>
+        <span className='w-full h-[40rem] md:h-[55rem] bg-gradient-to-b from-backgroundColorDark via-backgroundColorDark/50 to-backgroundColorDark absolute inset-0'></span>
+        <div className='w-full max-w-5xl relative max-[840px]:flex-col flex justify-between items-center md:mx-10 mt-20'>
           <div
-            className='w-fit h-fit max-[840px]:absolute  max-[840px]:top-[30%] z-20 relative'
+            className='w-fit h-fit z-20 relative'
           >
             <motion.h1
               initial={{ x: '-3rem', opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className='text-[--Secondary-Color] text-[1.2rem] font-bold  drop-shadow-[1px_1px_1px_rgb(0,0,0,0.2)] md:text-[1.5rem] max-[840px]:text-center'>
-              HI THERE!
+              transition={{ duration: 0.5 }}
+              className='text-[--Secondary-Color] text-4xl md:text-5xl xl:text-6xl font-bold  drop-shadow-[1px_1px_1px_rgb(0,0,0,0.2)] max-[840px]:text-center'>
+              Hello
             </motion.h1>
 
             <motion.h1
               initial={{ x: '-3rem', opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className='text-white  text-[2rem] lg:text-[3rem] xl:text-[4rem] max-[840px]:text-center font-semibold drop-shadow-2xl'>
-              I am Web Developer
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className='text-white text-4xl mt-4 md:text-5xl xl:text-6xl max-[840px]:text-center font-semibold drop-shadow-2xl '>
+              I&apos;m Ashar Meraj
 
             </motion.h1>
-            <motion.h1
+            {/* <motion.h1
+                initial={{ x: '-3rem', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                className=' text-white text-3xl lg:text-4xl xl:text-5xl  max-[840px]:text-center font-semibold drop-shadow-2xl '>
+                using
+              </motion.h1> */}
+
+            <motion.p
               initial={{ x: '-3rem', opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
-              className=' text-white text-[1.5rem] lg:text-[2rem] xl:text-[3rem]  max-[840px]:text-center mb-6 font-semibold drop-shadow-2xl'>
-              using <TypeAnimate />
-            </motion.h1>
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className=' text-white text-center md:text-start text-xl mx-6 md:mx-0 my-10 tracking-wide max-w-[25rem] drop-shadow-2xl'>
+              A full Stack web and generative Ai developer using <span className='text-[--Secondary-Color] text-xl'><TypeAnimate /></span>
+            </motion.p>
 
 
-            <motion.div 
-            initial={{ x: '-3rem', opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-            className='h-[3rem] flex items-center max-[840px]:justify-center'>
+            <motion.div
+              initial={{ x: '-3rem', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className='h-[3rem] flex items-center max-[840px]:justify-center'>
               {/* BUTTON */}
-              <Button>Get Started</Button>
+              <Link href={'/Contact'}><Button>Schedule A Call</Button></Link>
             </motion.div>
           </div>
-
-          <motion.div
-          initial={{ y: '2rem', opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 , delay: 0.3}}
-          >
-            <Image className=' shadow-bottom relative max-[840px]:bottom-[2rem] mr-[0rem] border-b-[5px] border-[--Primary-Color] rounded-full w-[17rem] md:w-[22rem] lg:w-[25rem] max-[840px]:order-first z-10 ' alt='/' src={MyPic} />
-          </motion.div>
         </div>
       </main>
-            </HomeAnimateWrap>
     </section>
   )
 }

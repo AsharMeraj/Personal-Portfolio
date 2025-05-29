@@ -1,0 +1,19 @@
+<svg className=""
+     xmlns="http://www.w3.org/2000/svg"
+     width="600" height=""
+     viewBox="0 0 744 423"
+     fill="none">
+  <path d="M2 126.5V86H258V0M366.5 422.5V0M741.5 133V86H481.5V0"
+        stroke="url(#whiteGradient)"
+        strokeWidth="2" />
+  <defs>
+    <linearGradient id="whiteGradient"
+        x1="371.963" y1="12"
+        x2="359.62" y2="389.388"
+        gradientUnits="userSpaceOnUse">
+      <stop stopColor="white" offset="0%" /> 
+      <stop stopColor="white" stopOpacity="0.5" offset="50%" />
+      <stop stopColor="white" stopOpacity="0" offset="100%" />
+    </linearGradient>
+  </defs>
+</svg>
