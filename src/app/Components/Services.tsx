@@ -39,7 +39,7 @@ const Services = () => {
                     <h2 className='text-2xl w-fit border-b text-[--Secondary-Color] tracking-wide'>Our Services</h2>
                     <h2 className='text-white text-3xl md:text-4xl w-fit -mt-6'>What We Do?</h2>
                     <p className='text-gray-400 max-w-96 '>From development to hosting and animations, we build high-performance websites with seamless deployment and interactive motion.</p>
-                    <div className='hidden md:block '><Button>View All Services</Button></div>
+                    <Link href={"/Services"} className='hidden md:block '><Button>View All Services</Button></Link>
                 </div>
 
                 {/* Right Section */}
