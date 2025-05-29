@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './button/Button'
+import Link from 'next/link'
 
 const Cto = () => {
   return (
@@ -13,7 +14,9 @@ const Cto = () => {
           <p className='text-gray-400 max-w-3xl mt-6'>Boost your online presence with cutting-edge web development and AI-powered solutions! Whether for personal or business use, we craft high-performance, user-friendly websites to drive growth. Let&apos;s build something amazing—reach out today!</p>
         </div>
         <span className='mt-6 md:mt-0'>
-          <Button>Contact Us</Button>
+          <Link href={'/Contact'}>
+            <Button>Contact Us</Button>
+          </Link>
         </span>
       </main>
     </section>
