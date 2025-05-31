@@ -31,7 +31,7 @@ const Services = () => {
 
                     <ServicesCard logo={SiHostinger} head='Web Hosting' para='From code to launch, our web development and hosting ensure a seamless experience.' />
 
-                    <ServicesCard logo={HiMiniSquare3Stack3D} head='3D Model Implementation' para='Whether you&apos;re midway or just starting, our web development services add the perfect finishing touch.' />
+                    <ServicesCard logo={HiMiniSquare3Stack3D} head='3D Model Implementation' para='Enhance user experience with seamless and dynamic 3D model implementation.' />
                 </div>
                 <Link href={"/Services"} className='block md:hidden'>
                     <Button>View All Services</Button>
