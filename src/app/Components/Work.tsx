@@ -32,22 +32,28 @@ const Work = () => {
 
     const portfolioItems = [
         {
-            image: "/Images/AmericanHitecPestControl.png"
+            image: "/Images/AmericanHitecPestControl.png",
+            link: "https://americanhitecpestcontrol-asharmeraj.vercel.app/"
         },
         {
-            image: "/Images/AiAcademy.png"
+            image: "/Images/AiAcademy.png",
+            link: "https://asharmeraj-ai-academy.vercel.app/"
+        },
+        // {
+        //     image: "/Images/TimeStore.png",
+        //     link: "https://time-store.vercel.app/"
+        // },
+        {
+            image: "/Images/AiInterviewMocker.png",
+            link: "https://ai-interview-mocker-aim.vercel.app/"
         },
         {
-            image: "/Images/TimeStore.png"
+            image: "/Images/BusinessGrowth.png",
+            link: "https://asharmeraj.github.io/React-Typescript-App/"
         },
         {
-            image: "/Images/AiInterviewMocker.png"
-        },
-        {
-            image: "/Images/BusinessGrowth.png"
-        },
-        {
-            image: "/Images/DineMarket.png"
+            image: "/Images/DineMarket.png",
+            link: "https://dinemarket-blue.vercel.app/"
         },
     ]
     return (
@@ -70,9 +76,11 @@ const Work = () => {
                     <CarouselContent className=''>
                         {portfolioItems.map((item, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 h-fit opacity-65 hover:opacity-100 duration-200 cursor-pointer">
-                                <div className="flex items-center justify-center">
-                                    <Image src={item.image} className='' width={1280} height={500} alt='/' />
-                                </div>
+                                <Link href={portfolioItems[index].link}>
+                                    <div className="flex items-center justify-center">
+                                        <Image src={item.image} className='' width={1280} height={500} alt='/' />
+                                    </div>
+                                </Link>
                             </CarouselItem>
                         ))}
                     </CarouselContent>
