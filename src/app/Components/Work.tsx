@@ -52,7 +52,7 @@ const Work = () => {
             link: "https://asharmeraj.github.io/React-Typescript-App/"
         },
         {
-            image: "/Images/DineMarket.png",
+            image: "/Images/Dinemarket.png",
             link: "https://dinemarket-blue.vercel.app/"
         },
     ]
