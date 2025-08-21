@@ -39,10 +39,10 @@ const Work = () => {
             image: "/Images/AiAcademy.png",
             link: "https://asharmeraj-ai-academy.vercel.app/"
         },
-        // {
-        //     image: "/Images/TimeStore.png",
-        //     link: "https://time-store.vercel.app/"
-        // },
+        {
+            image: "/Images/TimeStore.png",
+            link: "https://timestore-asharmeraj.vercel.app//"
+        },
         {
             image: "/Images/AiInterviewMocker.png",
             link: "https://ai-interview-mocker-aim.vercel.app/"

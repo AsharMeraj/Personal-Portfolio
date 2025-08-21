@@ -14,13 +14,13 @@ const Footer = () => {
               <h2 className="text-white text-sm uppercase font-semibold mb-4">Quick Links</h2>
               <ul className="space-y-3">
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm transition-all">Newsroom</a>
+                  <a  className="text-gray-400 hover:text-white text-sm transition-all">Newsroom</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm transition-all">Tailwind CSS</a>
+                  <a  className="text-gray-400 hover:text-white text-sm transition-all">Tailwind CSS</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm transition-all">Careers</a>
+                  <a  className="text-gray-400 hover:text-white text-sm transition-all">Careers</a>
                 </li>
               </ul>
             </div>
@@ -46,10 +46,10 @@ const Footer = () => {
               <h2 className="text-white text-sm uppercase font-semibold mb-4">Company</h2>
               <ul className="space-y-3">
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm transition-all">Privacy Policy</a>
+                  <a  className="text-gray-400 hover:text-white text-sm transition-all">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" className="text-gray-400 hover:text-white text-sm transition-all">Terms &amp; Conditions</a>
+                  <a  className="text-gray-400 hover:text-white text-sm transition-all">Terms &amp; Conditions</a>
                 </li>
               </ul>
             </div>

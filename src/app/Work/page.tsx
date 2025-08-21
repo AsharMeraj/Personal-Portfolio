@@ -75,7 +75,7 @@ const page = () => {
               </span>
               <Image src={AiAcademyStretch2} alt='/' className='w-full h-full' />
             </Link>
-            <Link target='_blank' href={'https://time-store.vercel.app/'} className="overflow-y-hidden col-start-2 lg:col-start-3 row-start-2 lg:row-span-2 bg-gray-500 flex lg:hidden items-center justify-center relative aboutDiv">
+            <Link target='_blank' href={'https://timestore-asharmeraj.vercel.app/'} className="overflow-y-hidden col-start-2 lg:col-start-3 row-start-2 lg:row-span-2 bg-gray-500 flex lg:hidden items-center justify-center relative aboutDiv">
               <span className='w-full bg-gradient-to-b bg-black/70 absolute inset-0 z-0 aboutSpan translate-y-full duration-500'>
                 <div className='w-full h-full m-auto text-white flex flex-col justify-center gap-4 py-6 px-4'>
                   <h2 className='text-xl text-[--Secondary-Color] text-center'>Time Store</h2>
@@ -95,7 +95,7 @@ const page = () => {
               <Image src={AiInterviewMockerStretch} alt='/' className='w-full h-full' />
             </Link>
 
-            <Link target='_blank' href={'https://time-store.vercel.app/'} className="overflow-y-hidden col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 lg:row-span-2 bg-gray-700 hidden lg:flex items-center justify-center relative aboutDiv">
+            <Link target='_blank' href={'https://timestore-asharmeraj.vercel.app/'} className="overflow-y-hidden col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 lg:row-span-2 bg-gray-700 hidden lg:flex items-center justify-center relative aboutDiv">
               <span className='w-full bg-gradient-to-b bg-black/70 absolute inset-0 z-0 aboutSpan translate-y-full duration-500'>
                 <div className='w-full h-full m-auto text-white flex flex-col justify-center gap-4 py-6 px-4'>
                   <h2 className='text-xl text-[--Secondary-Color] text-center'>Time Store</h2>
@@ -175,7 +175,7 @@ const page = () => {
               </span>
               <Image src={AiInterviewMockerStretch} alt='/' className='w-full h-full' />
             </Link>
-            <Link target='_blank' href={'https://time-store.vercel.app/'} className="bg-yellow-400 row-span-2 col-start-1 row-start-8 flex items-center justify-center relative overflow-hidden aboutDiv">
+            <Link target='_blank' href={'https://timestore-asharmeraj.vercel.app/'} className="bg-yellow-400 row-span-2 col-start-1 row-start-8 flex items-center justify-center relative overflow-hidden aboutDiv">
             <span className='w-full bg-gradient-to-b bg-black/70 absolute inset-0 z-0 aboutSpan translate-y-full duration-500 aboutSpan'>
                 <div className='w-full h-full m-auto text-white flex flex-col justify-center gap-4 py-6 px-4'>
                   <h2 className='text-xl text-[--Secondary-Color] text-center'>Time Store</h2>

@@ -5,10 +5,10 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import NextTopLoader from 'nextjs-toploader';
 
-const inter = Outfit({ subsets: ['latin'], weight: ['600'] })
+const inter = Outfit({ subsets: ['latin'], weight: ["700"] })
 
 export const metadata: Metadata = {
-  title: 'Ashar Dev',
+  title: 'Muhammad Ashar',
   description: 'My Personal Website',
 }
 
@@ -29,9 +29,9 @@ export default function RootLayout({
             crawlSpeed={50}
           />
           <div className="overflow-hidden relative">
-              <Navbar />
-              {children}
-              <Footer />
+            <Navbar />
+            {children}
+            <Footer />
           </div>
         </body>
       </html >
